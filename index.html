@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="shortcut icon" href="images/dc1.png">
+    <title>Day Care</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="bootstrap4.0/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/Animate.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css">
+</head>
+<body>
+
+<!-- (Header-Navbar) -->
+
+<header class="bgc">
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="images/logo1.png" alt="brand logo" class="brandlogo"><br>
+            <span class="wher">Where Kids Grow Happy</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse  justify-content-end" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aboutus">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactus">Contact Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login/Register <i class="fas fa-user-tie"></i></a>
+
+                        <div id="id01" class="modal m1">
+                            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                <form class="modal-content mc1" action="/action_page.php">
+                                    <div class="container c_1">
+                                        <p class="reg">Register</p>
+                                        <p>If You Have Already an account. <a href="#" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Login</a></p>
+                                        <hr class="hr1">
+                                        
+                                        <input type="text" placeholder="Parent Name" class="emal1" name="name" required>
+
+                                        <select name="child age" class="emal1">
+                                            <option value="" class="sel">-Select Your Child Age-</option>
+                                            <option value="">1</option>
+                                            <option value="">2</option>
+                                            <option value="">3</option>
+                                            <option value="">4</option>
+                                            <option value="">5</option>
+                                            <option value="">6</option>
+                                            <option value="">7</option>
+                                            <option value="">8</option>
+                                            <option value="">9</option>
+                                            <option value="">10</option>
+                                        </select>
+                                        
+                                        <input type="email" placeholder="Enter Email" class="emal1" name="email" required>
+                                        
+                                        <input type="number" placeholder="Enter Mobile Number" class="emal1 mob" name="mobile" required>
+                                        
+                                        <input type="password" placeholder="Enter Password" class="emal1" name="psw" required>
+                                        
+                                        <input type="password" placeholder="Repeat Password" class="emal1" name="psw-repeat" required>
+                                        
+                                        <label>
+                                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                                        </label>
+                                
+                                        <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+                                
+                                        <div class="clearfix">
+                                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="canlbtn btnn1">Cancel</button>
+                                            <button type="submit" class="signbtn btnn1">Sign Up</button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div id="id02" class="model m2">
+                                            
+                                    <form class="model-content mc2 animate" action="/action_page.php">
+                                        <div class="imgcontainer">
+                                            <span onclick="document.getElementById('id02').style.display='none'" class="clse" title="Close Model">&times;</span>
+                                            <img src="images/logo1.png" alt="Avatar" class="avatr">
+                                            <p class="grwhpy">Where Kids Grow Happy</p>
+                                        </div>
+
+                                        <div class="container c_1">
+                                            <label for="uname"><b>Username</b></label>
+                                            <input type="text" placeholder="Enter Username" class="emal2" name="uname" required>
+
+                                            <label for="psw"><b>Password</b></label>
+                                            <input type="password" placeholder="Enter Password" class="emal2" name="psw" required>
+                                                
+                                            <button type="submit" class="btnn_1">Login</button>
+                                            <label>
+                                                <input type="checkbox" checked="checked" name="remember"> Remember me
+                                            </label>
+                                        </div>
+
+                                        <div class="container c_1" style="background-color:#f1f1f1">
+                                            <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+                                            <span class="psww">Forgot <a href="#">password?</a></span>
+                                        </div>
+                                    </form>
+                                    
+                                </div>
+                    
+                        </div>
+                    </li>  
+                </ul>
+            </div>  
+        </div>
+    </nav>
+</header>
+
+<!-- (Page-0) -->
+
+<div class="p0">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="admn">
+                    <img src="images/text2.jpg" alt="image text" class="tex img-thumbnail hinge">
+                    <p class="explor">
+                        Exploring through play. <br>
+                        Laughing with friends. <br>
+                        Learning by heart.
+                    </p>
+                    <br><br>
+                    <a href="#" onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="adm">Admission Enquiry !</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- (page-1) -->
+
+<div class="p2">
+    <div class="container">      
+        <p class="p2p1">Our Services</p>
+        <div class="row">
+            <div class="col-md-6">
+                <div id="carousel1_indicator" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel1_indicator" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel1_indicator" data-slide-to="1"></li>
+                        <li data-target="#carousel1_indicator" data-slide-to="2"></li>
+                    </ol>  
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <img class="d-block w-100 img-thumbnail" src="images/cpe1.png" alt="First slide"> 
+                        </div>
+                        <div class="carousel-item">
+                        <img class="d-block w-100 img-thumbnail" src="images/carousal1.jpg" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                        <img class="d-block w-100 img-thumbnail" src="images/car8.jpg" alt="Third slide">
+                        </div>
+                    </div>
+                    
+                </div> 
+            </div>
+            <div class="col-md-6">
+                <p class="cpe1">CPE <span class="dycre1">Daycare</span></p>
+                <p class="cpe_day1">CPE, or early childhood centres, are non-profit private corporations, managed by a board of parents, entirely subsidized by the Government. They provide daycare services in a dedicated space, usually to 80 children organized in age groups, with a fully trained educator in each group, all year round. They follow a learn-through-play educational program and are very close to European preschool or kindergarten programs in terms of organization. Parents are required to contribute only $7 a day ($140 a month), regardless of income.</p>
+                <p class="cpe_day1">Subsidized family daycare providers take care of up to 6 children at their place. Although they are self-employed, the quality of their services (home safety, training, educational program) is controlled by Coordinating Offices (“BC” in French). Parents’ contribution is $7 a day, as in. <br>
+                 </p>
+               <div class="knowmore"><a href="#" class="knwm1" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><b>Register</b> <i class="fas fa-info fa-fw" style="color:#fff"></i></a></div>
+               
+            </div>
+        </div>
+        <div class="row rwrsg">
+            <div class="col-md-6">
+                <p class="cpe2">RSG Home <span class="dycre2">Daycare</span></p>
+                <p class="cpe_day2">Ready, Set, Grow! provides outstanding child care services for the multi-ethnic community of Flushing, Queens. Our establishment began as a family day care center in April of 2003. Through hard work, determination, and our devotion towards children and learning, we expanded into a full-time day care center in less than a year. Due to our success in education and the support from our community, we moved into a new and more spacious location in March 2011 for our children to thrive. Here, our children are enjoying a much wider range of experience in their learning.</p>
+                <p class="cpe_day2">Ready, Set, Grow! offers Nursery, Toddler, and Prekindergarten services for our community. Our curriculum has always provided children with experiences that stimulate their learning in all developmental areas---- social, emotional, physical, and intellectual. While there are high expectations for all children, we do not expect that all the children perform the same tasks and achieve the same skills as their peers. 
+                </p>
+                <div class="knowmore"><a href="#" class="knwm2" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><b>Register</b> <i class="fas fa-info fa-fw" style="color:#fff"></i></a></div>
+                
+            </div>
+            <div class="col-md-6">
+                <div id="carousel2_indicator" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel2_indicator" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel2_indicator" data-slide-to="1"></li>
+                        <li data-target="#carousel2_indicator" data-slide-to="2"></li>
+                    </ol>  
+                    <div class="carousel-inner">
+                        <div class="carousel-item active ci1">
+                            <img class="d-block w-100 img-thumbnail" src="images/rsg1.jpg" alt="First slide"> 
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100 img-thumbnail" src="images/rsg2.jpg" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100 img-thumbnail" src="images/rsg3.jpg" alt="Third slide">
+                        </div>
+                    </div>
+                    
+                </div> 
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- (Page-2) -->
+
+<div class="p3" id="features">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="p3p1"><b>Come over to <span class="dycre1">Daycare</span> and get to know us better !</b></p>
+                <ul class="uol1">
+                    <li> Meet our staff to understand the learning and value system we impart.</li>
+                    <li class="uli1"> Visit our centre and experience the facilities and environment that we've set up for children.</li>
+                    <li> Talk to our curriculum experts to understand the right program for your child.</li>
+                </ul>
+                
+            </div>
+        </div>
+        <p class="p3p2"><b>Why <span class="dycre1">Daycare</span> is the right place for your child !</b></p>
+        <div class="row">
+            <div class="col-md-4">
+                <p class="p1_img fadeInLeft"><img src="images/books.jpg" alt="books" class="img_edu center img-thumbnail"></p>
+                <p class="edu">EDUCATION</p>
+            </div>
+            <div class="col-md-4">
+                <p class="p1_img"><img src="images/social.jpeg" alt="books" class="img_edu center img-thumbnail"></p>
+                <p class="edu">SOCIALIZATION</p>
+            </div>
+            <div class="col-md-4">
+                <p class="p1_img fadeInRight"><img src="images/kidscare.png" alt="books" class="img_edu center img-thumbnail"></p>
+                <p class="edu">ROUTINE & RELIABLE CARE</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <p class="p1_img fadeInLeft"><img src="images/infant.jpg" alt="books" class="img_edu center img-thumbnail"></p>
+                <p class="cdu">INFANT CARE</p>
+            </div>
+            <div class="col-md-4">
+                <p class="p1_img"><img src="images/infra.jpg" alt="books" class="img_edu center img-thumbnail"></p>
+                <p class="cdu">INFRASTRUCTURE</p>
+            </div>
+            <div class="col-md-4">
+                <p class="p1_img fadeInRight"><img src="images/class.png" alt="books" class="img_edu center img-thumbnail"></p>
+                <p class="cdu fadeInRight">CUSTOMIZED CLASS ROOM</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- (Page-3) -->
+
+<div id="p_1">
+    <div class="container">
+        <p class="hps">Happy Parent's Say</p>
+        <div id="demo" class="carousel slide" data-ride="carousel">
+  
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+              <div class="carousel-item active r1_w">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="c1">
+                            <p class="lorm1">Mukesh Reddy's Review</p>
+                            <p class="lorm2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis tempora quaerat natus ratione quas reprehenderit laudantium, quia neque, asperiores necessitatibus perferendis magni! Possimus eaque quo inventore tenetur ducimus quasi dolores?</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="c2">
+                            <p class="lorm1">Anil Passyat's Review</p>
+                            <p class="lorm2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis tempora quaerat natus ratione quas reprehenderit laudantium, quia neque, asperiores necessitatibus perferendis magni! Possimus eaque quo inventore tenetur ducimus quasi dolores?</p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item r1_w">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="c3">
+                            <p class="lorm1">Lorem Ipsum's Review</p>
+                            <p class="lorm2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis tempora quaerat natus ratione quas reprehenderit laudantium, quia neque, asperiores necessitatibus perferendis magni! Possimus eaque quo inventore tenetur ducimus quasi dolores?</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="c4">
+                            <p class="lorm1">Yamini Gupta's Review</p>
+                            <p class="lorm2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis tempora quaerat natus ratione quas reprehenderit laudantium, quia neque, asperiores necessitatibus perferendis magni! Possimus eaque quo inventore tenetur ducimus quasi dolores?</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="carousel-item r1_w">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="c5">
+                                <p class="lorm1">Ramgopal Varma's Review</p>
+                                <p class="lorm2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis tempora quaerat natus ratione quas reprehenderit laudantium, quia neque, asperiores necessitatibus perferendis magni! Possimus eaque quo inventore tenetur ducimus quasi dolores?</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="c6">
+                                <p class="lorm1">Vicky Roy's Review</p>
+                                <p class="lorm2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis tempora quaerat natus ratione quas reprehenderit laudantium, quia neque, asperiores necessitatibus perferendis magni! Possimus eaque quo inventore tenetur ducimus quasi dolores?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+
+<!-- (About US) -->
+
+<div class="abs">
+    <div class="container" id="aboutus">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="abts">About US</p>
+                <p class="wel"> Welcome to Day Care!</p><br>
+                <p class="clild1">We are a non-profit centre, licensed by the Ministry of Education. We provide care for up      to 24 children.
+                    Operating year round, the daycare is located in Hyderabad, within the grounds of the historic Friends House.  The daycare has been operating at this location for over forty years.
+                    Friends Day Care offers full-day learning  for children aged 5 weeks to 6 years, with a private, in-house Kindergarten program available.
+                    <br>
+                    At this daycare, our goal is to produce happy, intelligent, well-adjusted children. Here you will find a nurturing, educational environment for children of ages 3 months to 6 years.
+                    We recognize that each child has unique talents, learning styles and personalities. We are committed to working within each child’s comfort zone to ensure optimal social, emotional and educational results.
+                    I provide a program for children that emphasizes on art activities and a fun learning curriculum. 
+                    We are committed to working within each child’s comfort zone to ensure optimal social, emotional and educational results.
+                    I provide a program for children that emphasizes on art activities and a fun learning curriculum.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- (Contact US) -->
+
+<div class="contat" id="contactus">
+    <div class="container mt-5" >
+        <div class="row" style="height:550px;">
+            <div class="col-md-6 maps" >
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.57332871629!2d78.44364794999977!3d17.43225210604043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9a08b0a50cbb%3A0xd034b5c505b43ac3!2sPNG+Web+Solutions!5e0!3m2!1sen!2sin!4v1528839680168" frameborder="0" style="border:0" width="100%" class="img-thumbnail" allowfullscreen></iframe>
+            </div>
+            <div class="col-md-6 maps1">
+                <h2 class="text-uppercase mt-3 font-weight-bold text-white conm">CONTACT US</h2>
+                <form action="/action_page.php">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                            <input type="text" class="form-control mt-2" placeholder="Name" required>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                            <select name="child" class="form-control mt-2" required>
+                                <option value="">-select your child age-</option>
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                                <option value="">5</option>
+                                <option value="">6</option>
+                                <option value="">7</option>
+                                <option value="">8</option>
+                                <option value="">9</option>
+                                <option value="">10</option>
+                            </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                            <input type="email" class="form-control mt-2 emal3" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                            <input type="number" class="form-control mt-2 mob" placeholder="Mobile Number" required>
+                            </div>
+                        </div>          
+                        <div class="col-12">
+                            <div class="form-group">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Leave Comments..." rows="3" required></textarea>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="bt_n" type="submit">Send Your Message</button>
+                        </div>
+                        </div>
+                </form>
+                <div class="text-black">
+                    <h2 class="text-uppercase mt-4 font-weight-bold">Locate Us</h2>
+                    <div class="row addr">
+                        <div class="col-md-6">
+                            <i class="fas fa-phone mt-3"></i> <a href="tel:+" style="color: #1b1b1b">9867589858</a><br>
+                            <i class="fas fa-phone mt-3"></i> <a href="tel:+" style="color: #1b1b1b">8895789315</a><br>
+                            <i class="fa fa-envelope mt-3"></i> <a href="" style="color: #1b1b1b">info@daycare.in</a><br>
+                        </div>
+                        <div class="col-md-6">
+                            <i class="fas fa-globe mt-3"></i>Hyderabad<br>
+                            <i class="fas fa-globe mt-3"></i>Hyderabad<br>
+                            <i class="fas fa-globe mt-3"></i>Hyderabad
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- (Footer) -->
+
+<footer class="ft1">
+    <div class="container">   
+        <div class="row">
+            <div class="col-md-6">
+                <p class="sub3">Connect us</p>
+                <p id="social">
+                    <a class="facebookBtn smGlobalBtn" href="#"></a>
+                    <a class="twitterBtn smGlobalBtn" href="#"></a>
+                    <a class="googleplusBtn smGlobalBtn" href="#"></a>
+                    <a class="linkedinBtn smGlobalBtn" href="#"></a>
+                </p>
+            </div>
+            <div class="col-md-6">
+                <p class="sub2">Subscribe to our Newsletter</p>
+                <div class="input-group img-thumbnail">
+                    <input type="email" class="form-control fc1" placeholder="Enter your email">
+                    <span class="input-group-btn">
+                    <button class="btn btn-theme" type="submit"><span>Subscribe</span></button>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <hr class="h_r1">
+        <p class="ftp1">
+            Copyright &copy; 2018 Daycare. All right Reserved. Designed By :<a href="" class="zopak"> Zopaks.com</a>
+        </p>
+    </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="bootstrap4.0/js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
